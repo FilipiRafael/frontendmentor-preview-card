@@ -1,0 +1,134 @@
+:root {
+    --font-primary: 'Big Shoulders Display', 'cursive';
+    --font-secondary: 'Lexend Deca', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    max-width: 720px;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+main ul {
+    display: flex;
+    list-style-type: none;
+}
+
+main ul h1 {
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+main ul span {
+    text-align: left;
+    font-size: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1.5rem;
+}
+
+main ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: var(--font-secondary);
+    padding: 2rem;
+}
+
+main ul li img {
+    width: 42px;
+    margin-bottom: 1.5rem;
+}
+
+main ul button {
+    margin-top: 4rem;
+    align-items: flex-end;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #FFF;
+    font-weight: 600;
+    font-family: var(--font-secondary);
+    cursor: pointer;
+}
+
+main .item__sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+main .item__suvs {
+    background-color:  hsl(184, 100%, 22%);
+}
+
+main .item__luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+@media screen and (max-width: 690px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        padding: 1rem 0;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    main ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 95%;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding-bottom: 2rem;
+    }
+
+    main ul span {
+        font-size: 1.5rem;
+    }
+
+    main ul li {
+        border-radius: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    main ul li button {
+        font-size: 1rem;
+    }
+
+    main .item__sedans {
+        border-radius: 0.5rem;
+    }
+    
+    main .item__suvs {
+        border-radius: 0.5rem;
+    }
+    
+    main .item__luxury {
+        border-radius: 0.5rem;
+    }
+}
